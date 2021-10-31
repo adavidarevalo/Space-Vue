@@ -15,7 +15,6 @@ export default {
     name: 'HomeComponent',
     methods:{
         changePage(){
-            console.log('Yes baby')
             this.$router.push({name: 'destination', params: {name: 'moon'}})
 
         }
@@ -30,9 +29,15 @@ section{
     color: white;
     padding-block: 0px 40px;
 }
+div{
+    animation: fadeInLeft 1s both;
+}
 p{
     font-size: 1.2rem;
     line-height: 30px;
+    color: hsl(231 77% 90%);
+    max-width: 500px;
+    margin: 15px auto;
 }
 .PreTitle{
     font-size: 1.3rem;
@@ -51,9 +56,43 @@ button{
     background: white;
     font-size: 1.4rem;
     transition: all 1s ease;
+    animation: fadeInRight 1s both;
 }
 button:active,
 button:hover{
     box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
+@media (min-width: 800px) {
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 850px) {
+    button{
+        width: 250px;
+        height: 250px;        
+    }
+}
+@keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+  } 
+@keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  transform: none;
+  }
+  } 
 </style>

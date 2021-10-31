@@ -24,9 +24,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin: 0px;
+  background-color: #0C0D19;
 }
 body{
   margin: 0px;
+  height: 100vh;
+  background-color: #0C0D19;
 }
 a, button{
   text-decoration: none;

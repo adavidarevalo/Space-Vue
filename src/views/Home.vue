@@ -1,6 +1,5 @@
 <template>
-    <section>
-        <h1><span>01</span> pick your destination</h1>
+    <section class="HomeContainer">
         <HomeComponent/>
     </section>
 </template>
@@ -18,10 +17,25 @@ export default {
 
 }
 </script>
-<style>
-    body{
+
+<style scoped>
+    .HomeContainer{
         background-image: url('../assets/home/background-home-mobile.jpg');
         background-size: cover;
         background-position: center;
+        min-height: 88.4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (min-width: 550px) {
+        .HomeContainer{
+            background-image: url('../assets/home/background-home-tablet.jpg');
+        }
+    }
+    @media (min-width: 800px) {
+        .HomeContainer{
+            background-image: url('../assets/home/background-home-desktop.jpg');
+        }
     }
 </style>
