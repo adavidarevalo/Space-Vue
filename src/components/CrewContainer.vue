@@ -71,6 +71,7 @@ section{
     width: 80%;
     margin: 0 auto;
     background: none;
+    max-width: 1000px;
 }
 img{
     grid-row-start: 1;

@@ -55,6 +55,7 @@ export default {
 section{
     width: 80%;
     margin: 0 auto;
+    max-width: 1000px;
 }
 .Details{
     animation: fadeInRight 1s both;

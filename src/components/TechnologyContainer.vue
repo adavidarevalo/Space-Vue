@@ -70,6 +70,7 @@ section{
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+    max-width: 1300px;
 }
 .Details{
     animation: fadeIn 1s both;

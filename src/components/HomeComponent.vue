@@ -28,6 +28,7 @@ section{
     margin: 0 auto;
     color: white;
     padding-block: 0px 40px;
+    max-width: 1000px;
 }
 div{
     animation: fadeInLeft 1s both;
